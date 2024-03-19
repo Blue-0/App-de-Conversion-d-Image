@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { saveAs } from "file-saver";
 import "./App.css";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -85,6 +86,7 @@ function App() {
           Convertir l'image
         </button>
       </div>
+      <Outlet/>
     </div>
   );
 }
